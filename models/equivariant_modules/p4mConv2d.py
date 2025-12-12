@@ -38,7 +38,7 @@ class P4M_GroupConv2d_Ref(nn.Module):
       y(g) = sum_{h in p4m}  conv2d( x(h),  L_g ψ( g^{-1} h ) )
 
     - ψ(·)는 '상대 원소 u = g^{-1}h' 만 의존하도록 파라미터화: weight_rel[:, :, u]
-    - L_g는 필터에 적용 (논문 7.1 'filter transformation').  :contentReference[oaicite:2]{index=2}
+    - L_g는 필터에 적용 (논문 7.1 'filter transformation').
     """
     def __init__(self, in_channels, out_channels, kernel_size=3, stride=1, padding=0, bias=True, dilation=1):
         super().__init__()
