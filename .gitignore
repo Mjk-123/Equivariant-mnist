@@ -1,0 +1,6 @@
+*.pt
+
+/data
+/runs
+/wandb
+/__pycache__
